@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+:root{
+    --bg-black: #000000;
+    --third-shadow : #222222;
+    --secondary-mint : #169976;
+    --primary-mint : #1DCD9F;
+}
