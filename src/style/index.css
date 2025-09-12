@@ -14,7 +14,7 @@
 
 .hero-left {
   color: #ffffff;
-  margin-top: 10rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
 }
@@ -75,6 +75,7 @@
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
+  margin-right: 3rem;
 }
 
 .findme {
@@ -151,80 +152,96 @@
   opacity: 75%;
 }
 
-/* Responsive Styles */
-@media (max-width: 900px) {
+/* Responsive */
+@media (max-width: 1200px) {
   .hero-content,
   .pengenalan-content,
   .findme-content {
-    margin-top: 3em;
+    margin-inline-start: 3rem;
+    margin-inline-end: 3rem;
+    gap: 2rem; 
+    font-size: smaller;
+  }
+  .hero-right img,
+  .pengenalan-left img {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-content,
+  .pengenalan-content {
     flex-direction: column;
     align-items: center;
-    margin-inline-start: 1.5rem;
-    margin-inline-end: 1.5rem;
-    gap: 2rem;
+    text-align: center;
+    gap: 1.5rem;
   }
-
-  .hero {
-    height: auto;
-    padding-bottom: 2rem;
-  }
-
-  .pengenalan {
-    height: auto;
-    padding-bottom: 2rem;
-  }
-
-  .findme {
-    height: auto;
-    padding-bottom: 2rem;
-  }
-
   .hero-left,
+  .hero-right,
   .pengenalan-left,
   .pengenalan-right {
     margin-top: 2rem;
-    align-items: center;
-    text-align: center;
   }
-
-  .hero-right,
-  .pengenalan-left {
-    margin-top: 1rem;
-  }
-
   .hero-right img,
   .pengenalan-left img {
-    width: 90vw;
-    max-width: 320px;
-    height: auto;
+    width: 260px;
+    height: 260px;
   }
-
+  .hero-left h1,
+  .pengenalan-right h1 {
+    font-size: 1.3rem;
+  }
+  .pengenalan-right ul {
+    font-size: 1.1rem;
+  }
   .findme-content {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
-
   .findme-content article {
-    width: 90vw;
-    max-width: 320px;
-    height: auto;
-    margin-bottom: 1rem;
+    width: 180px;
+    height: 200px;
+    font-size: 1rem;
   }
-
   .findme h1 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .hero,
+  .pengenalan,
+  .findme {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .hero-content,
+  .pengenalan-content,
+  .findme-content {
+    margin-inline: 0.5rem;
+    gap: 1rem;
+  }
+  .hero-right img,
+  .pengenalan-left img {
+    width: 140px;
+    height: 140px;
+  }
   .hero-left h1,
-  .pengenalan-right h1,
+  .pengenalan-right h1 {
+    font-size: 1rem;
+  }
+  .pengenalan-right ul {
+    font-size: 0.95rem;
+  }
+  .findme-content article {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
   .findme h1 {
     font-size: 1.2rem;
   }
-
-  .footer-absolute p {
-    font-size: 12px;
-  }
 }
+
