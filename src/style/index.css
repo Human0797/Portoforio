@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  height: 655px;
+  height: 685px;
   background-color: var(--third-shadow);
 }
 
@@ -28,7 +28,7 @@
 .hero-right img {
   border-radius: 18px;
   box-shadow: 0.8em 0.8em var(--bg-black);
-  height: 480px;
+  height: 500px;
   width: 480px;
 }
 
@@ -40,7 +40,7 @@
 
 .pengenalan {
   width: 100%;
-  height: 660px;
+  height: 685px;
   background-color: #ffffff;
 }
 
@@ -61,8 +61,8 @@
 .pengenalan-left img {
   border-radius: 18px;
   box-shadow: 0.8em 0.8em var(--bg-black);
-  height: 480px;
-  width: 480px;
+  height: 500px;
+  width: 500px;
 }
 
 .pengenalan-left img:hover {

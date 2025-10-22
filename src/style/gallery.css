@@ -1,5 +1,6 @@
 body {
     color: #666;
+    margin-top: 1em;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -55,7 +56,7 @@ h1,h2,h3,h4,h5,h6 {
         color: #aaa;
     }
 
-        .photo-box aside span a {
+        .photo-box aside span p {
             color: #ccc;
             text-decoration: none;
         }
